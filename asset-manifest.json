@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/use-web-socket/static/css/main.f7d3a57b.chunk.css",
-    "main.js": "/use-web-socket/static/js/main.ceed4cb7.chunk.js",
-    "main.js.map": "/use-web-socket/static/js/main.ceed4cb7.chunk.js.map",
-    "runtime-main.js": "/use-web-socket/static/js/runtime-main.bc3f6a5f.js",
-    "runtime-main.js.map": "/use-web-socket/static/js/runtime-main.bc3f6a5f.js.map",
-    "static/js/2.b4b133b6.chunk.js": "/use-web-socket/static/js/2.b4b133b6.chunk.js",
-    "static/js/2.b4b133b6.chunk.js.map": "/use-web-socket/static/js/2.b4b133b6.chunk.js.map",
-    "index.html": "/use-web-socket/index.html",
-    "precache-manifest.5c8e5d1fa7fd8a2eb085813f8c6c851e.js": "/use-web-socket/precache-manifest.5c8e5d1fa7fd8a2eb085813f8c6c851e.js",
-    "service-worker.js": "/use-web-socket/service-worker.js",
-    "static/css/main.f7d3a57b.chunk.css.map": "/use-web-socket/static/css/main.f7d3a57b.chunk.css.map",
-    "static/js/2.b4b133b6.chunk.js.LICENSE.txt": "/use-web-socket/static/js/2.b4b133b6.chunk.js.LICENSE.txt"
+    "main.css": "/use-websocket-lite/static/css/main.f7d3a57b.chunk.css",
+    "main.js": "/use-websocket-lite/static/js/main.6779b097.chunk.js",
+    "main.js.map": "/use-websocket-lite/static/js/main.6779b097.chunk.js.map",
+    "runtime-main.js": "/use-websocket-lite/static/js/runtime-main.38837d2a.js",
+    "runtime-main.js.map": "/use-websocket-lite/static/js/runtime-main.38837d2a.js.map",
+    "static/js/2.e8f5b126.chunk.js": "/use-websocket-lite/static/js/2.e8f5b126.chunk.js",
+    "static/js/2.e8f5b126.chunk.js.map": "/use-websocket-lite/static/js/2.e8f5b126.chunk.js.map",
+    "index.html": "/use-websocket-lite/index.html",
+    "precache-manifest.f0824c4777e552080063504cd3df8f1b.js": "/use-websocket-lite/precache-manifest.f0824c4777e552080063504cd3df8f1b.js",
+    "service-worker.js": "/use-websocket-lite/service-worker.js",
+    "static/css/main.f7d3a57b.chunk.css.map": "/use-websocket-lite/static/css/main.f7d3a57b.chunk.css.map",
+    "static/js/2.e8f5b126.chunk.js.LICENSE.txt": "/use-websocket-lite/static/js/2.e8f5b126.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc3f6a5f.js",
-    "static/js/2.b4b133b6.chunk.js",
+    "static/js/runtime-main.38837d2a.js",
+    "static/js/2.e8f5b126.chunk.js",
     "static/css/main.f7d3a57b.chunk.css",
-    "static/js/main.ceed4cb7.chunk.js"
+    "static/js/main.6779b097.chunk.js"
   ]
 }
