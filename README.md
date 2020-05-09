@@ -144,6 +144,12 @@ function Example() {
 }
 ```
 
+### Demo
+
+A working example using the hook is hosted here, [demo](https://kailash-sankar.github.io/use-websocket-lite/)
+
+That's all folks.
+
 ## License
 
 MIT © [Kailash-Sankar](https://github.com/Kailash-Sankar)
