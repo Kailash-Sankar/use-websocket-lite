@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+.app {
+  padding: 5;
+}
+
 .ta-center {
   text-align: center;
 }
@@ -27,13 +31,17 @@ code {
 
 .fix-center {
   margin: auto;
-  text-align: center;
   left: 50%;
-  position: fixed;
-  transform: translateX(-50%);
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
-  bottom: 1%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.row {
+  padding-top: 10px;
 }

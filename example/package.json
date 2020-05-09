@@ -7,6 +7,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
+    "react-lumos": "link ../node_modules/react-lumos",
     "use-web-socket": "link:.."
   },
   "scripts": {

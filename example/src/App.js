@@ -56,7 +56,7 @@ function App() {
           <input type='button' onClick={sendData} value='Send' />
         </form>
       </div>
-      <div style={{ maxHeight: 300, overflowY: 'scroll' }}>
+      <div style={{ height: 300, overflowY: 'scroll' }}>
         {messagesList.map((Tag, i) => (
           <div key={i}>{Tag}</div>
         ))}

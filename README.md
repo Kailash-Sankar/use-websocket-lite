@@ -12,7 +12,7 @@ npm install --save use-web-socket
 
 ## Usage
 
-The hook does only an essneital set of tasks, it's kept minimal so that it can be adopted and used easily.
+The hook does only an essential set of tasks, it's kept minimal so that it can be adopted and used easily to learn websockets.
 
 ### Params
 
