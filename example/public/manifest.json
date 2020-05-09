@@ -1,6 +1,6 @@
 {
-  "short_name": "use-web-socket",
-  "name": "use-web-socket",
+  "short_name": "use-websocket-lite",
+  "name": "use-websocket-lite",
   "icons": [
     {
       "src": "favicon.ico",

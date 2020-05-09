@@ -11,7 +11,7 @@ function Home() {
       <div className='container'>
         <div className='row'>
           <div className='column column-80 column-offset-10 ta-center'>
-            <h3 style={{ marginBottom: '0.5rem' }}>use-web-socket</h3>
+            <h3 style={{ marginBottom: '0.5rem' }}>use-websocket-lite</h3>
             <h5>A clean and minimal react hook around client WebSocket</h5>
           </div>
         </div>
@@ -23,7 +23,7 @@ function Home() {
         <div className='row'>
           <div className='column column-100'>
             <div className='footer ta-center'>
-              <a href='https://github.com/Kailash-Sankar/use-web-socket'>
+              <a href='https://github.com/Kailash-Sankar/use-websocket-lite'>
                 Kailash Sankar, April 2020
               </a>
             </div>

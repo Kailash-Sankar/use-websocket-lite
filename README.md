@@ -1,13 +1,13 @@
-# use-web-socket
+# use-websocket-lite
 
 > A clean and minimal react hook around client WebSocket
 
-[![NPM](https://img.shields.io/npm/v/use-web-socket.svg)](https://www.npmjs.com/package/use-web-socket)
+[![NPM](https://img.shields.io/npm/v/use-websocket-lite.svg)](https://www.npmjs.com/package/use-websocket-lite)
 
 ## Install
 
 ```bash
-npm install --save use-web-socket
+npm install --save use-websocket-lite
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ A simple use case, connect to socket and receive messages.
 
 ```jsx
 import React from 'react';
-import useWebSocket from 'use-web-socket';
+import useWebSocket from 'use-websocket-lite';
 
 function Example() {
   const { data, readyState } = useWebSocket({
@@ -84,7 +84,7 @@ function Example() {
 
 ```jsx
 import React, { useState, useEffect, useRef } from 'react';
-import useWebSocket from 'use-web-socket';
+import useWebSocket from 'use-websocket-lite';
 const sockerUrl = 'wss://echo.websocket.org';
 
 const sendTag = (message) => <span>&#11014;: {message}</span>;

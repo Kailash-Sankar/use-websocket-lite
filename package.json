@@ -1,10 +1,10 @@
 {
-  "name": "use-web-socket",
+  "name": "use-websocket-lite",
   "version": "0.0.0",
   "description": "A clean and minimal react hook around client WebSocket",
   "author": "Kailash-Sankar",
   "license": "MIT",
-  "repository": "Kailash-Sankar/use-web-socket",
+  "repository": "Kailash-Sankar/use-websocket-lite",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

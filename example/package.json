@@ -1,6 +1,6 @@
 {
-  "name": "use-web-socket-example",
-  "homepage": "https://Kailash-Sankar.github.io/use-web-socket",
+  "name": "use-websocket-lite-example",
+  "homepage": "https://Kailash-Sankar.github.io/use-websocket-lite",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
     "react-lumos": "link ../node_modules/react-lumos",
-    "use-web-socket": "link:.."
+    "use-websocket-lite": "link:.."
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
