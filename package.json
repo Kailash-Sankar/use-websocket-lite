@@ -1,7 +1,7 @@
 {
   "name": "use-web-socket",
   "version": "1.0.0",
-  "description": "A clean and minimal wrapper around client WebSocket",
+  "description": "A clean and minimal react hook around client WebSocket",
   "author": "Kailash-Sankar",
   "license": "MIT",
   "repository": "Kailash-Sankar/use-web-socket",

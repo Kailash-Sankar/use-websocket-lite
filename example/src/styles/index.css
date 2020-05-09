@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ta-center {
+  text-align: center;
+}
+
+.connection.open {
+  color: darkgreen;
+}
+
+.connection.closed {
+  color: tomato;
+}
+
+.fix-center {
+  margin: auto;
+  text-align: center;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+}
+
+.footer {
+  bottom: 1%;
+  font-size: 1.2rem;
+}
