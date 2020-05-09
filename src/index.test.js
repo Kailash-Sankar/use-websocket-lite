@@ -1,7 +1,23 @@
-import { ExampleComponent } from '.'
+import useWebSocket from '.';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-describe('ExampleComponent', () => {
+const App = () => {
+  const ws = useWebSocket({ socketUrl: 'wss://echo.websocket.org' });
+  return (
+    <div>
+      <span test-id='readystate'>{ws.readyState}</span>
+    </div>
+  );
+};
+
+describe('Hook tests', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+    expect(<App />).toBeTruthy();
+  });
+
+  it('renders', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<App />, div);
+  });
+});

@@ -1,3 +1,3 @@
-import useWebSocket from "./hook";
+import useWebSocket from './hook';
 
 export default useWebSocket;
