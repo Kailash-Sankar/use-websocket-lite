@@ -1,9 +1,9 @@
-import useWebSocket from '.';
+import useWebSocketLite from '.';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-  const ws = useWebSocket({ socketUrl: 'wss://echo.websocket.org' });
+  const ws = useWebSocketLite({ socketUrl: 'wss://echo.websocket.org' });
   return (
     <div>
       <span test-id='readystate'>{ws.readyState}</span>

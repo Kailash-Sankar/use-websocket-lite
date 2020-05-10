@@ -35,7 +35,7 @@ function useWebSocketLite({
   useEffect(() => {
     const params = [socketUrl];
     if (protocol) {
-      params.push(token);
+      params.push(protocol);
     }
     const ws = new WebSocket(...params);
 
