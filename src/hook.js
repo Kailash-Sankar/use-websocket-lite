@@ -17,9 +17,9 @@ function getTimestamp() {
 }
 
 // websocket hook
-function useWebSocket({
+function useWebSocketLite({
   socketUrl,
-  token,
+  protocol,
   retry: defaultRetry = 3,
   retryInterval = 1500
 }) {
@@ -34,7 +34,7 @@ function useWebSocket({
 
   useEffect(() => {
     const params = [socketUrl];
-    if (token) {
+    if (protocol) {
       params.push(token);
     }
     const ws = new WebSocket(...params);
@@ -81,4 +81,4 @@ function useWebSocket({
   return { send, data, readyState };
 }
 
-export default useWebSocket;
+export default useWebSocketLite;

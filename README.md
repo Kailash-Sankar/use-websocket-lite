@@ -25,7 +25,7 @@ const options = {
   socketUrl,
   // string or array, passed as sec-websocket-protocol
   // optional, this value is not passed if undefined
-  token,
+  protocol,
   // number of retry attempts
   // optional, defaults to 3
   retry,
@@ -61,10 +61,10 @@ A simple use case, connect to socket and receive messages.
 
 ```jsx
 import React from 'react';
-import useWebSocket from 'use-websocket-lite';
+import useWebSocketLite from 'use-websocket-lite';
 
 function Example() {
-  const { data, readyState } = useWebSocket({
+  const { data, readyState } = useWebSocketLite({
     socketUrl: 'ws://localhost:3000'
   });
 
@@ -84,20 +84,24 @@ function Example() {
 
 ```jsx
 import React, { useState, useEffect, useRef } from 'react';
-import useWebSocket from 'use-websocket-lite';
+import useWebSocketLite from 'use-websocket-lite';
 const sockerUrl = 'wss://echo.websocket.org';
 
 const sendTag = (message) => <span>&#11014;: {message}</span>;
 const receiveTag = (message) => <span>&#11015;: {message}</span>;
 
-function Example() {
+function Example(user) {
   const [messagesList, setMessagesList] = useState([
     <span>Messages will be displayed here</span>
   ]);
   const txtRef = useRef();
 
-  const ws = useWebSocket({
-    socketUrl: sockerUrl
+  const ws = useWebSocketLite({
+    socketUrl: sockerUrl,
+    // repurpose protocol header to pass auth token,
+    // provided your server code is set to pick it from
+    // sec-websocket-protocol header
+    protocol: user.authToken
   });
 
   useEffect(() => {

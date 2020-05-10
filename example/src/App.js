@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import useWebSocket from 'use-websocket-lite';
+import useWebSocketLite from 'use-websocket-lite';
 
 const sockerUrl = 'wss://echo.websocket.org';
 //const sockerUrl = 'ws://localhost:3080/?type=ngo_notification';
@@ -13,7 +13,7 @@ function App() {
   ]);
   const txtRef = useRef();
 
-  const ws = useWebSocket({
+  const ws = useWebSocketLite({
     socketUrl: sockerUrl
   });
 
