@@ -1,6 +1,6 @@
 {
   "name": "use-websocket-lite",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A clean and minimal react hook around client WebSocket",
   "author": "Kailash-Sankar",
   "license": "MIT",
