@@ -21,7 +21,8 @@ function useWebSocketLite({
   socketUrl,
   protocol,
   retry: defaultRetry = 3,
-  retryInterval = 1500
+  retryInterval = 1500,
+  initPayload = null
 }) {
   // message and timestamp
   const [data, setData] = useState();
@@ -41,7 +42,6 @@ function useWebSocketLite({
 
     ws.onopen = () => {
       console.log('Connected to socket');
-      setReadyState(true);
 
       // fn to send messages
       setSend(() => {
@@ -61,6 +61,14 @@ function useWebSocketLite({
         const msg = formatMessage(event.data);
         setData({ message: msg, timestamp: getTimestamp() });
       };
+
+      // initialization payload
+      if (initPayload) {
+        ws.send(JSON.stringify(initPayload));
+      }
+
+      // set ready at the end
+      setReadyState(true);
     };
 
     ws.onclose = () => {
@@ -72,6 +80,7 @@ function useWebSocketLite({
         }, retryInterval);
       }
     };
+
     // terminate connection on unmount
     return () => {
       ws.close();

@@ -31,7 +31,11 @@ const options = {
   retry,
   // retry interval
   // optional, defaults to 1500
-  retryInterval
+  retryInterval,
+  // initialization payload
+  // send as the first message after connection
+  // json object or string
+  initPayload
 };
 ```
 
@@ -88,7 +92,9 @@ import useWebSocketLite from 'use-websocket-lite';
 const sockerUrl = 'wss://echo.websocket.org';
 
 const sendTag = (message) => <span>&#11014;: {message}</span>;
-const receiveTag = (message) => <span>&#11015;: {message}</span>;
+const receiveTag = (message) => (
+  <span>&#11015;: {JSON.stringify(message)}</span>
+);
 
 function Example(user) {
   const [messagesList, setMessagesList] = useState([
@@ -98,10 +104,10 @@ function Example(user) {
 
   const ws = useWebSocketLite({
     socketUrl: sockerUrl,
-    // repurpose protocol header to pass auth token,
-    // provided your server code is set to pick it from
-    // sec-websocket-protocol header
-    protocol: user.authToken
+    initPayload: {
+      type: 'jwt',
+      token: user.authToken
+    }
   });
 
   useEffect(() => {

@@ -5,7 +5,9 @@ const sockerUrl = 'wss://echo.websocket.org';
 //const sockerUrl = 'ws://localhost:3080/?type=ngo_notification';
 
 const sendTag = (message) => <span>&#11014;: {message}</span>;
-const receiveTag = (message) => <span>&#11015;: {message}</span>;
+const receiveTag = (message) => (
+  <span>&#11015;: {JSON.stringify(message)}</span>
+);
 
 function App() {
   const [messagesList, setMessagesList] = useState([
@@ -14,7 +16,8 @@ function App() {
   const txtRef = useRef();
 
   const ws = useWebSocketLite({
-    socketUrl: sockerUrl
+    socketUrl: sockerUrl,
+    initPayload: { hello: 'there' }
   });
 
   useEffect(() => {
